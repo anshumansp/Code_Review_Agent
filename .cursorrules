@@ -1,0 +1,23 @@
+# Node.js Server Rules
+- Use concise, technical JavaScript code for the Node.js server.
+- Prefer using Express.js for setting up the server endpoints.
+- Implement robust error handling and consider edge cases at the start of functions.
+- Write asynchronous functions using async/await for handling requests and responses with the LLM.
+- Retry failed requests to the LLM endpoint to enhance resiliency.
+- Sanitize inputs and validate JSON requests to ensure security.
+- Favor modular design by separating routes, models, and utilities.
+
+# React Frontend Application Rules
+- Use React functional components and hooks (useState, useEffect) for managing application state and lifecycle.
+- Implement robust data fetching using libraries like axios or fetch API from the Node.js backend.
+- Populate React components with data from server responses and render LLM responses dynamically.
+- Optimize performance by minimizing re-renders using React.memo and useCallback where necessary.
+- Use proper error handling strategies for network errors and display user-friendly messages.
+- Ensure the UI/UX is responsive and accessible by adhering to ARIA best practices.
+
+# General Project Conventions
+- Use ESLint and Prettier for consistent code formatting and style.
+- Follow a mobile-first approach for CSS styling using frameworks like Tailwind or styled-components.
+- Conduct unit and integration testing using Jest for both backend and frontend components.
+- Document components and functions using JSDoc or TypeScript type annotations.
+- Structure the project with a clear directory layout: separate folders for components, hooks, services, and utilities.
